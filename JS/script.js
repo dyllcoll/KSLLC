@@ -4,7 +4,7 @@ document.getElementById("contactForm").addEventListener("submit", function(event
     let emailInput = document.getElementById("email").value;
     let formMessage = document.getElementById("formMessage");
 
-    fetch("https://formsubmit.co/ajax/YOUR_EMAIL_HERE", {
+    fetch("https://formsubmit.co/ajax/Dylancol2002@gmail.com", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email: emailInput })

@@ -36,13 +36,15 @@
     <section id="quote-form">
         <h2>Get a Free Quote</h2>
         <p>Leave your details below and we will contact you as soon as possible.</p>
-        <form id="contactForm">
-            <input type="email" id="email" placeholder="Your Email" required>
-            <input type="tel" id="phone" placeholder="Your Phone Number" required>
-            <textarea id="message" placeholder="Describe the service you need..." required></textarea>
-            <button type="submit">Request a Quote</button>
+        <form action="https://getform.io/f/bwnqvgra" method="POST">
+            <input type="email" name="email" placeholder="Your Email" required>
+            <input type="phone" name="phone" placeholder="Your Phone Number" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
         </form>
-        <p id="form-message"></p> <!-- Message feedback -->
+
+        <!-- Success/Error Message Placeholder -->
+        <div id="form-message"></div>
     </section>
 
     <!-- Footer -->
