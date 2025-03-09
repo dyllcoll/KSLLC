@@ -1,0 +1,174 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header Section */
+header {
+    background-color: #2d6a4f;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.logo {
+    width: 150px; /* Responsive logo */
+    height: auto;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+/* Navigation */
+nav {
+    background-color: #40916c;
+    text-align: center;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    transition: background 0.3s ease-in-out;
+}
+
+nav a:hover {
+    background-color: #52b788;
+    border-radius: 5px;
+}
+
+/* Main Sections */
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Services Section */
+#services ul {
+    list-style: none;
+    padding: 0;
+}
+
+#services ul li {
+    background: #95d5b2;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Quote Request Form */
+#quote-form {
+    text-align: center;
+    padding: 20px;
+    background: #d8f3dc;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 400px;
+}
+
+#quote-form input,
+#quote-form textarea {
+    width: 90%;
+    max-width: 350px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#quote-form textarea {
+    height: 100px;
+    resize: none;
+}
+
+#quote-form button {
+    background-color: #2d6a4f;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background 0.3s ease-in-out;
+}
+
+#quote-form button:hover {
+    background-color: #40916c;
+}
+
+/* Success/Error Message */
+#form-message {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #2d6a4f;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Mobile-Friendly Styles */
+@media screen and (max-width: 768px) {
+    header {
+        padding: 15px;
+    }
+
+    .logo {
+        width: 120px;
+    }
+
+    nav ul {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    nav a {
+        display: block;
+        padding: 10px;
+        background-color: #52b788;
+        border-radius: 5px;
+        margin: 5px;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    #quote-form {
+        width: 95%;
+    }
+
+    footer {
+        padding: 10px;
+    }
+}
