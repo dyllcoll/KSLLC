@@ -1,10 +1,20 @@
-/* General Styles */
+/* Global Reset */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
+    overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
 /* Header Section */
@@ -59,6 +69,19 @@ section {
     text-align: center;
 }
 
+/* Services Section */
+#services ul {
+    list-style: none;
+    padding: 0;
+}
+
+#services ul li {
+    background: #95d5b2;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
 /* Quote Request Form */
 #quote-form {
     text-align: center;
@@ -104,12 +127,6 @@ section {
     background-color: #40916c;
 }
 
-/* Success/Error Message */
-#form-message {
-    font-size: 16px;
-    margin-top: 10px;
-}
-
 /* Footer */
 footer {
     background-color: #2d6a4f;
@@ -153,7 +170,7 @@ footer {
     color: #40916c;
 }
 
-/* Responsive Styles */
+/* Responsive */
 @media screen and (max-width: 768px) {
     header {
         padding: 15px;
@@ -194,6 +211,7 @@ footer {
         padding: 10px;
     }
 
+    /* Adjust contact info and social media sections for mobile */
     .contact-info, .social-media {
         width: 90%;
     }
